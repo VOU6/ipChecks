@@ -1,5 +1,2 @@
 nmap
-api==1.0.0
 requests
-cryptography
-psutil
