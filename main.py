@@ -1,3 +1,4 @@
+
 # To install requirements, run the following command in your terminal:
 # pip install -r Requirements.txt
 from Scan import scan
