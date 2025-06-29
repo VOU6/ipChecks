@@ -1,6 +1,4 @@
-#must be run root##
-###I LIED DONT RUN AS ROOT, IT WILL NOT WORK###
-###WHY I DONT KNOW FUCK THIS###
+###    DONT RUN AS ROOT, IT WILL NOT WORK    ###
 
 import nmap
 from WIFIip import get_local_ip
