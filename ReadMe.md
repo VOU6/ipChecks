@@ -56,7 +56,7 @@ Run the following commands:
 
 OR run these commands:
 
-    $ pip install Requirements.txt
+    $ pip install -r Requirements.txt
 
     $ python3 main.py -aK "example_key"
 
