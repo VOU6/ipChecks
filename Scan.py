@@ -14,3 +14,4 @@ def scan():
         vendor = nm[host].get('vendor', {}).get(mac, 'Unknown')
         print(f"{host} is {status}   MAC: {mac}   Vendor: {vendor}")
     return nm.all_hosts()
+
