@@ -4,13 +4,23 @@
 #import cryptography
 
 import requests
-from Encryptor import decrypt
+from Encryptor import justGetKey
+import sys
 
 
 BASE_URL = "http://api.ipstack.com/"
 
 def get_key():
-    return decrypt()
+    try:
+        if len(sys.argv) > 2:
+            if sys.argv[2] == "-aK" & len(sys.argv) == 3:
+                return sys.argv[3]
+    except Exception:
+        try:
+            return justGetKey()
+        except Exception:
+            print("Error: API key not found. Please provide a valid API key.")
+            sys.exit(1)
 def getJSON(ip):
     url = BASE_URL + ip + "?access_key=" + get_key()
     response = requests.get(url)

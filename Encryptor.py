@@ -12,3 +12,9 @@ def decrypt():
     with open("APIKEY.txt", "r") as api_file:
         encrypted_message = api_file.read()
     return f.decrypt(encrypted_message).decode()
+
+
+
+def justGetKey():
+    with open("key.txt", "r") as key_file:
+        return key_file.read()

@@ -10,3 +10,7 @@ def get_local_ip():
         return None
     finally:
         s.close()
+        
+        
+        
+        
